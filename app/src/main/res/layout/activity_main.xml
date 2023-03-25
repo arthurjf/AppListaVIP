@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    style="@style/Background">
+
 
     <TextView
         android:id="@+id/textView"
@@ -32,7 +34,8 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        style="@style/Edit_Text" />
 
     <EditText
         android:id="@+id/editPersonLastName"
@@ -45,7 +48,8 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editPersonName"
+        style="@style/Edit_Text" />
 
     <EditText
         android:id="@+id/editPersonCourseName"
@@ -57,7 +61,8 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonLastName" />
+        app:layout_constraintTop_toBottomOf="@+id/editPersonLastName"
+        style="@style/Edit_Text" />
 
     <EditText
         android:id="@+id/editPersonCelPhone"
@@ -69,7 +74,8 @@
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonCourseName" />
+        app:layout_constraintTop_toBottomOf="@+id/editPersonCourseName"
+        style="@style/Edit_Text" />
 
     <Button
         android:id="@+id/buttonClear"
@@ -80,7 +86,8 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonFinish"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone"
-        app:layout_constraintVertical_bias="0.511" />
+        app:layout_constraintVertical_bias="0.511"
+        style="@style/Button"/>
 
     <Button
         android:id="@+id/buttonFinish"
@@ -91,7 +98,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone"
+        style="@style/Button" />
 
     <Button
         android:id="@+id/buttonSave"
@@ -102,6 +110,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toEndOf="@+id/buttonClear"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone"
+        style="@style/Button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

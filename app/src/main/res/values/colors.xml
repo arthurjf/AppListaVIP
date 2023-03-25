@@ -7,11 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="buttons">#009A76</color>
-    <color name="buttons_text">#E6EAE6</color>
-    <color name="background">#0E191C</color>
-    <color name="title">#CED5D3</color>
-    <color name="text">#7B8080</color>
-    <color name="plain_text">@color/title</color>
-    <color name="plain_text_hint">@color/text</color>
+    <color name="grey">#7B8080</color>
+    <color name="green">#009A76</color>
+
+    <!-- Dark Mode -->
+    <color name="dark_cyan">#0E191C</color>
+
 </resources>
