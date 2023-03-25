@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AppListaVIP</string>
+    <string name="app_home_title">Aplicativo Lista VIP Curso Android</string>
+    <string name="app_home_button_clear">Limpar</string>
+    <string name="app_home_button_save">Salvar</string>
+    <string name="app_home_button_finish">Finalizar</string>
+    <string name="app_home_plainfield_name_hint">Nome</string>
+    <string name="app_home_plainfield_lastName_hint">Sobrenome</string>
+    <string name="app_home_plainfield_courseName_hint">Nome do Curso Desejado</string>
+    <string name="app_home_plainfield_celPhone_hint">Telefone de Contato</string>
 </resources>
