@@ -7,7 +7,6 @@
     tools:context=".MainActivity"
     style="@style/Background">
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -79,38 +78,41 @@
 
     <Button
         android:id="@+id/buttonClear"
+        style="@style/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:height="60dp"
         android:text="@string/app_home_button_clear"
         app:layout_constraintBottom_toTopOf="@+id/buttonFinish"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone"
-        app:layout_constraintVertical_bias="0.511"
-        style="@style/Button"/>
+        app:layout_constraintVertical_bias="0.511" />
 
     <Button
         android:id="@+id/buttonFinish"
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:height="60dp"
         android:text="@string/app_home_button_finish"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone"
-        style="@style/Button" />
+        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone" />
 
     <Button
         android:id="@+id/buttonSave"
+        style="@style/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:height="60dp"
         android:text="@string/app_home_button_save"
         app:layout_constraintBottom_toTopOf="@+id/buttonFinish"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toEndOf="@+id/buttonClear"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone"
-        style="@style/Button" />
+        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
