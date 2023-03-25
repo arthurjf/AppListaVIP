@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editPersonLastName" />
 
     <EditText
-        android:id="@+id/editPersonCelPhone"
+        android:id="@+id/editPersonPhoneNumber"
         style="@style/Edit_Text"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -84,7 +84,7 @@
         android:text="@string/app_home_button_clear"
         app:layout_constraintBottom_toTopOf="@+id/buttonFinish"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editPersonPhoneNumber"
         app:layout_constraintVertical_bias="0.511" />
 
     <Button
@@ -98,7 +98,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editPersonPhoneNumber"
         app:layout_constraintVertical_bias="0.2" />
 
     <Button
@@ -112,6 +112,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toEndOf="@+id/buttonClear"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonCelPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editPersonPhoneNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
