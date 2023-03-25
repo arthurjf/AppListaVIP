@@ -1,0 +1,3 @@
+# **AppListaVIP**
+
+## 🔨 Em Desenvolvimento 🔨
