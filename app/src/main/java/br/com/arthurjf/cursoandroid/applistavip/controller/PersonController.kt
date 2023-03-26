@@ -24,10 +24,10 @@ class PersonController(mainActivity: MainActivity) {
     }
 
     fun search(person: Person): Person {
-        person.firstName = preferences.getString(PREFERENCES_FIRSTNAME, "")!!
-        person.lastName = preferences.getString(PREFERENCES_LASTNAME, "")!!
-        person.courseName = preferences.getString(PREFERENCES_COURSENAME, "")!!
-        person.phoneNumber = preferences.getString(PREFERENCES_PHONENUMBER, "")!!
+        person.firstName = preferences.getString(PREFERENCES_FIRSTNAME, "")
+        person.lastName = preferences.getString(PREFERENCES_LASTNAME, "")
+        person.courseName = preferences.getString(PREFERENCES_COURSENAME, "")
+        person.phoneNumber = preferences.getString(PREFERENCES_PHONENUMBER, "")
 
         return person
     }
