@@ -58,9 +58,7 @@ class MainActivity : AppCompatActivity() {
 
         //- Botão FINALIZAR -//
         buttonFinish.setOnClickListener {
-            var toastMessage = "Nenhum usuário encontrado"
-
-            toastMessage = "Olá " + person.firstName?.trim() + " :)"
+            val toastMessage = "Olá " + person.firstName?.trim() + " :)"
 
             Toast.makeText(applicationContext, toastMessage, Toast.LENGTH_LONG).show()
         }
