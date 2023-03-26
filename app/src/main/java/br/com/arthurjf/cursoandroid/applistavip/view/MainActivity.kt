@@ -54,8 +54,6 @@ class MainActivity : AppCompatActivity() {
             personController?.save(person)
 
             Toast.makeText(applicationContext, "Salvo :)", Toast.LENGTH_SHORT).show()
-
-            clear()
         }
 
         //- Botão FINALIZAR -//
