@@ -72,7 +72,7 @@
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPersonCourseName" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCourseName" />
 
     <Button
         android:id="@+id/buttonClear"
@@ -113,5 +113,25 @@
         app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toEndOf="@+id/buttonClear"
         app:layout_constraintTop_toBottomOf="@+id/editPersonPhoneNumber" />
+
+    <Spinner
+        android:id="@+id/spinnerCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCourseNameTitle"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/textViewCourseNameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/app_home_spinner_courseName_textView_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/editPersonCourseName"
+        tools:layout_editor_absoluteX="106dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

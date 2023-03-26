@@ -8,4 +8,5 @@
     <string name="app_home_plainfield_lastName_hint">Sobrenome</string>
     <string name="app_home_plainfield_courseName_hint">Nome do Curso Desejado</string>
     <string name="app_home_plainfield_celPhone_hint">Telefone de Contato</string>
+    <string name="app_home_spinner_courseName_textView_title">Selecione um Curso</string>
 </resources>
