@@ -1,11 +1,14 @@
 package br.com.arthurjf.cursoandroid.applistavip.view
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.arthurjf.cursoandroid.applistavip.R
+import br.com.arthurjf.cursoandroid.applistavip.controller.CourseController
 import br.com.arthurjf.cursoandroid.applistavip.controller.PersonController
 import br.com.arthurjf.cursoandroid.applistavip.model.Person
 
@@ -23,9 +26,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         personController = PersonController(this)
-
         personController?.search(person)
 
+        //- Spinner -//
+        val courseController = CourseController()
+        val courseNamesListForSpinner = courseController.getCourseListForSpinner()
+        val spinnerCourses = findViewById<Spinner>(R.id.spinnerCourseName)
+        val adapter =
+            ArrayAdapter(
+                this,
+                android.R.layout.simple_list_item_1,
+                courseNamesListForSpinner
+            )
+        adapter.setDropDownViewResource(android.R.layout.simple_list_item_1)
+        spinnerCourses.adapter = adapter
+
+        //- Edit Fields-//
         editPersonName = findViewById(R.id.editPersonName)
         editLastName = findViewById(R.id.editPersonLastName)
         editCourseName = findViewById(R.id.editPersonCourseName)
@@ -36,6 +52,7 @@ class MainActivity : AppCompatActivity() {
         editCourseName?.setText(person.courseName)
         editPhoneNumber?.setText(person.phoneNumber)
 
+        //- Botões -//
         val buttonClear = findViewById<Button>(R.id.buttonClear)
         val buttonSave = findViewById<Button>(R.id.buttonSave)
         val buttonFinish = findViewById<Button>(R.id.buttonFinish)
